@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Form, Label, Input, Button, FormGroup, Card, CardBody } from "reactstrap";
-import CurrentUserContext from "./CurrentUserContext";
+import CurrentUserContext from "../CurrentUserContext";
 
 const Login = () => {
     const [formData, setFormData] = useState({

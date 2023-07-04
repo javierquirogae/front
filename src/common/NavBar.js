@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "reactstrap";
-import CurrentUserContext from "./CurrentUserContext";
+import CurrentUserContext from "../user/CurrentUserContext";
 
 const NavBar = () => {
     const {currUser, logout} = useContext(CurrentUserContext);

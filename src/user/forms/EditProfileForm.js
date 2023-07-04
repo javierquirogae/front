@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import CurrentUserContext from "./CurrentUserContext";
+import CurrentUserContext from "../CurrentUserContext";
 import { Form, Label, Input, Button, FormGroup, Card, CardBody } from "reactstrap";
 
 const EditProfileForm = () => {

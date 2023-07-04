@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
-import "./NewUserForm.css";
 import { Form, Label, Input, Button, FormGroup, Card, CardBody } from "reactstrap";
-import CurrentUserContext from "./CurrentUserContext";
+import CurrentUserContext from "../CurrentUserContext";
 
 const NewUserForm = () => {
     const [formData, setFormData] = useState({

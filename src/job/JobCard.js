@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Card, CardBody, CardTitle, CardText, Button } from "reactstrap";
 import "./JobCard.css";
-import CurrentUserContext from "./CurrentUserContext";
+import CurrentUserContext from "../user/CurrentUserContext";
 
 /** Single card that displays title, company (if provided),
     salary, and equity */

@@ -9,7 +9,7 @@ const CompanyCard = ({ name, description, handle }) => {
         <Link className="CompanyCard" to={`companies/${handle}`}>
             <Card className="CompanyCard">
                 <CardBody>
-                    <CardTitle>{name}</CardTitle>
+                    <CardTitle style={{fontWeight: "bold"}} >{name}</CardTitle>
                     <CardText>{description}</CardText>
                 </CardBody>
             </Card>

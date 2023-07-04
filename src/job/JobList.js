@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import JoblyApi from "./api.js";
+import JoblyApi from "../common/Api.js";
 import { CardColumns } from "reactstrap";
 import JobCard from "./JobCard.js";
-import SearchForm from "./SearchForm.js";
+import SearchForm from "../common/SearchForm.js";
 import { v4 as uuid } from 'uuid';
 
 const JobList = () => {
@@ -12,6 +12,7 @@ const JobList = () => {
     useEffect(() => {
         async function getJobs() {
             const res = await JoblyApi.getAllJobs();
+            
             setJobs(res);
             setIsLoading(false);
         }
@@ -23,6 +24,7 @@ const JobList = () => {
         let res;
         if (searchTerm === "") {
             res = await JoblyApi.getAllJobs();
+            
         } else {
             res = await JoblyApi.searchJobs(searchTerm);
         }
